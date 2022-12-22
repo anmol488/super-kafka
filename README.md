@@ -1,27 +1,15 @@
-# Next.js + Tailwind CSS Example
+# SuperKafka
 
-This example shows how to use [Tailwind CSS](https://tailwindcss.com/) [(v3.2)](https://tailwindcss.com/blog/tailwindcss-v3-2) with Next.js. It follows the steps outlined in the official [Tailwind docs](https://tailwindcss.com/docs/guides/nextjs).
+## Welcome to SuperKafka!
 
-## Deploy your own
+This is an event-management portal with real time chat functionality. I made this app using the following tech stack -
 
-Deploy the example using [Vercel](https://vercel.com?utm_source=github&utm_medium=readme&utm_campaign=next-example) or preview live with [StackBlitz](https://stackblitz.com/github/vercel/next.js/tree/canary/examples/with-tailwindcss)
-
-[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/git/external?repository-url=https://github.com/vercel/next.js/tree/canary/examples/with-tailwindcss&project-name=with-tailwindcss&repository-name=with-tailwindcss)
-
-## How to use
-
-Execute [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app) with [npm](https://docs.npmjs.com/cli/init), [Yarn](https://yarnpkg.com/lang/en/docs/cli/create/), or [pnpm](https://pnpm.io) to bootstrap the example:
-
-```bash
-npx create-next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-yarn create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-```bash
-pnpm create next-app --example with-tailwindcss with-tailwindcss-app
-```
-
-Deploy it to the cloud with [Vercel](https://vercel.com/new?utm_source=github&utm_medium=readme&utm_campaign=next-example) ([Documentation](https://nextjs.org/docs/deployment)).
+1. Next.js 13 (used experimental appDir feature - so have app folder instead of traditional Next.js 12 pages folder as main)
+2. TypeScript
+3. Upstash (Redis database where messages are stored and pulled from)
+4. Pusher (Real-time listeners)
+5. SWR (for data-fetching - server side rendering)
+6. Custom API endpoints under the folder -> pages/api
+7. NextAuth.js (for Google authentication)
+8. Tailwind CSS (utility class enabled CSS)
+9. Firebase Firestore (for storing event details & mapping through them to display)

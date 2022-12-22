@@ -7,11 +7,12 @@ export default async function RootLayout({
 }: {
   children: React.ReactNode;
 }) {
+  const session = await unstable_getServerSession();
   return (
     <html>
       <head />
       <body>
-        <Header />
+        <Header session={session} />
         {children}
       </body>
     </html>

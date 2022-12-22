@@ -1,7 +1,8 @@
+import { unstable_getServerSession } from "next-auth";
 import "../styles/globals.css";
 import Header from "./Header";
 
-export default function RootLayout({
+export default async function RootLayout({
   children,
 }: {
   children: React.ReactNode;

@@ -8,8 +8,7 @@ type Props = {
   session: Awaited<ReturnType<typeof unstable_getServerSession>>;
 };
 
-function Header({session}: Props) {
-
+function Header({ session }: Props) {
   if (session)
     return (
       <header className="sticky top-0 z-50 bg-white flex justify-between items-center p-10 shadow-sm">
@@ -45,13 +44,6 @@ function Header({session}: Props) {
           />
           <p>Welcome to SuperKafka</p>
         </div>
-
-        <Link
-          href="/auth/signin"
-          className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded"
-        >
-          Sign In
-        </Link>
       </div>
     </header>
   );

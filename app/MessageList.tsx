@@ -2,8 +2,8 @@
 
 import { useEffect } from "react";
 import useSWR from "swr";
-import { clientPusher } from "../pusher";
-import { Message } from "../typings";
+import { clientPusher } from "../lib/pusher";
+import { Message } from "../utils/typings";
 import fetcher from "../utils/fetchMessages";
 import MessageComponent from "./MessageComponent";
 

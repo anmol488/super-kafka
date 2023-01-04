@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Message } from "../typings";
+import { Message } from "../utils/typings";
 import ChatInput from "./ChatInput";
 import MessageList from "./MessageList";
 import { unstable_getServerSession } from "next-auth";

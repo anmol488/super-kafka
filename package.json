@@ -6,7 +6,9 @@
     "start": "next start"
   },
   "dependencies": {
+    "@headlessui/react": "^1.7.7",
     "encoding": "^0.1.13",
+    "firebase": "^9.15.0",
     "ioredis": "^5.2.4",
     "next": "latest",
     "next-auth": "^4.18.7",
@@ -14,6 +16,7 @@
     "pusher-js": "^8.0.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hot-toast": "^2.4.0",
     "react-timeago": "^7.1.0",
     "swr": "^2.0.0",
     "uuid": "^9.0.0"

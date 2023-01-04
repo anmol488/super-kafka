@@ -12,7 +12,7 @@ function SignInComponent({ providers }: Props) {
       {Object.values(providers!).map((provider) => (
         <div key={provider.name}>
           <button
-            className="bg-blue-600 hover:bg-blue-800 text-white font-bold py-2 px-4 rounded"
+            className="btn text-white bg-blue-600 hover:bg-blue-700 w-full"
             onClick={() =>
               signIn(provider.id, {
                 callbackUrl: "https://localhost:3000",

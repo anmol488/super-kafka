@@ -1,6 +1,6 @@
 import type { NextApiRequest, NextApiResponse } from "next";
-import redis from "../../redis";
-import { Message } from "../../typings";
+import redis from "../../lib/redis";
+import { Message } from "../../utils/typings";
 
 type Data = {
   messages: Message[];

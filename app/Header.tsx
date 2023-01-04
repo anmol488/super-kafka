@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import LogoutButton from "./LogoutButton";
 import unstable_getServerSession from "next-auth";

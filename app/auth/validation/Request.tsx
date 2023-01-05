@@ -17,7 +17,6 @@ export default function Request() {
 
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [yrLvl, setYrLvl] = useState("");
   const [desc, setDesc] = useState("");
   const [loading, setLoading] = useState(false);
 
@@ -25,7 +24,6 @@ export default function Request() {
     event?.preventDefault();
 
     const format = /[`!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/;
-    const num = /\d/;
     if (format.test(name)) {
       toast.error("Please enter a valid name");
       return;
@@ -36,13 +34,8 @@ export default function Request() {
       return;
     }
 
-    if (yrLvl.length < 2 || !num.test(yrLvl)) {
-      toast.error("Please enter a valid year level");
-      return;
-    }
-
     if (desc.length > 200) {
-      toast.error("Please enter 200 chars max in description");
+      toast.error("Please enter 200 chars max");
       return;
     }
 
@@ -51,7 +44,6 @@ export default function Request() {
       await addDoc(collection(db, "requests"), {
         name: name,
         email: email,
-        yearLevel: yrLvl,
         eventDescription: desc,
         createdAt: serverTimestamp(),
       });
@@ -89,6 +81,7 @@ export default function Request() {
           >
             <div className="fixed inset-0" />
           </Transition.Child>
+
           <div className="fixed inset-0 overflow-y-auto">
             <div className="flex min-h-full items-center justify-center p-4 text-center">
               <Transition.Child
@@ -135,25 +128,6 @@ export default function Request() {
                             required
                             onChange={(event) => {
                               setEmail(event.target.value);
-                            }}
-                          />
-                        </div>
-                      </div>
-                      <div className="flex flex-wrap -mx-3 mb-4">
-                        <div className="w-full px-3">
-                          <div className="flex justify-between">
-                            <label className="block text-gray-800 text-sm font-medium mb-1">
-                              Year Level
-                            </label>
-                          </div>
-                          <input
-                            id="yrlvl"
-                            type="text"
-                            className="form-input w-full text-gray-800"
-                            placeholder="Enter your year level"
-                            required
-                            onChange={(event) => {
-                              setYrLvl(event.target.value);
                             }}
                           />
                         </div>

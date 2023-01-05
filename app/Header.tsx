@@ -41,7 +41,7 @@ function Header({ session }: Props) {
             alt="Logo"
             className="rounded-xl"
           />
-          <p>Welcome to SuperKafka</p>
+          <p className="font-bold">Welcome to SuperKafka</p>
         </div>
       </div>
     </header>

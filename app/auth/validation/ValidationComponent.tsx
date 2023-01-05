@@ -5,6 +5,7 @@ import Request from "./Request";
 import { useRouter } from "next/navigation";
 import { useState } from "react";
 import toast, { Toaster } from "react-hot-toast";
+import Feedback from "./Feedback";
 
 function ValidationComponent() {
   const [password, setPassword] = useState("");
@@ -85,9 +86,7 @@ function ValidationComponent() {
           </div>
           <div className="flex flex-wrap -mx-3 mb-3">
             <div className="w-full px-3">
-              <button className="btn px-0 text-white bg-gray-900 hover:bg-gray-800 w-full">
-                Give feedback
-              </button>
+              <Feedback />
             </div>
           </div>
         </div>

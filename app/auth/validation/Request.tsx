@@ -29,8 +29,8 @@ export default function Request() {
       return;
     }
 
-    if (!email.includes("@")) {
-      toast.error("Please enter a valid email");
+    if (!email.includes("@diaestudents.com")) {
+      toast.error("Please enter a valid DIA email");
       return;
     }
 
@@ -55,9 +55,10 @@ export default function Request() {
     toast.success("Request has been successfully sent!");
   };
 
+  <Toaster position="bottom-center" reverseOrder={false} />;
+
   return (
     <>
-      <Toaster position="bottom-center" reverseOrder={false} />
       <div className="inset-0 flex items-center justify-center">
         <button
           type="button"

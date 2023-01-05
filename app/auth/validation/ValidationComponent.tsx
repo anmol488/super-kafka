@@ -30,8 +30,8 @@ function ValidationComponent() {
       <div className="pt-32 pb-12 md:pb-20">
         <div className="max-w-3xl mx-auto text-center pb-12 md:pb-20">
           <h1 className="h1">
-            To keep our chat logs confidential, please enter the assigned
-            password to continue.
+            If you're a leadership team member, enter the assigned password to
+            continue.
           </h1>
         </div>
 

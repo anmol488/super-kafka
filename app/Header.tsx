@@ -1,7 +1,7 @@
 import Image from "next/image";
-import React from "react";
 import LogoutButton from "./LogoutButton";
 import unstable_getServerSession from "next-auth";
+import EventModal from "./EventModal";
 
 type Props = {
   session: Awaited<ReturnType<typeof unstable_getServerSession>>;
@@ -26,7 +26,10 @@ function Header({ session }: Props) {
           </div>
         </div>
 
-        <LogoutButton />
+        <div className="flex space-x-2">
+          <EventModal session={session} />
+          <LogoutButton />
+        </div>
       </header>
     );
 
@@ -41,7 +44,9 @@ function Header({ session }: Props) {
             alt="Logo"
             className="rounded-xl"
           />
-          <p className="font-bold">Welcome to SuperKafka. The home of DIA events!</p>
+          <p className="font-bold">
+            Welcome to SuperKafka. The home of DIA events!
+          </p>
         </div>
       </div>
     </header>

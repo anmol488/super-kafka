@@ -1,4 +1,3 @@
-import React, { useEffect } from "react";
 import { Message } from "../utils/typings";
 import ChatInput from "./ChatInput";
 import MessageList from "./MessageList";

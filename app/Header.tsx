@@ -35,13 +35,13 @@ function Header({ session }: Props) {
       <div className="flex flex-col items-center space-y-5">
         <div className="flex space-x-2 items-center">
           <Image
-            src="https://res.cloudinary.com/dcqjb4hp2/image/upload/v1671703723/43f8f49aabf8e445e9e19caad9245d41_vh1smz.png"
+            src="https://res.cloudinary.com/dxo0clghf/image/upload/v1672994981/dia-logo_o7kiua.png"
             height={10}
             width={50}
             alt="Logo"
             className="rounded-xl"
           />
-          <p className="font-bold">Welcome to SuperKafka</p>
+          <p className="font-bold">Welcome to SuperKafka. The home of DIA events!</p>
         </div>
       </div>
     </header>

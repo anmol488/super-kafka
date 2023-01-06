@@ -2,7 +2,9 @@
 
 ## Welcome to SuperKafka!
 
-This is an event-management portal with real time chat functionality. I made this app using the following tech stack -
+This is an event-management portal with real time chat functionality. 
+
+I made this app using the following tech stack -
 
 1. Next.js 13 (used experimental appDir feature - so have app folder instead of traditional Next.js 12 pages folder as main)
 2. TypeScript

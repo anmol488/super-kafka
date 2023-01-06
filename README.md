@@ -13,3 +13,4 @@ This is an event-management portal with real time chat functionality. I made thi
 7. NextAuth.js (for Google authentication)
 8. Tailwind CSS (utility class enabled CSS)
 9. Firebase Firestore (for storing event details & mapping through them to display)
+10. Headless UI (for modals and drop down menus)
